@@ -1,0 +1,17 @@
+.Block {
+    flex-grow: 5;
+    height: 300px;
+    /* width: 50px; */
+    background-color: white;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    align-self: flex-end;
+}
+
+.Block:nth-child(1) {
+    margin-left: 20px;
+}
+
+/* .Block:nth-child(5) {
+    margin-right: 10px;
+} */
