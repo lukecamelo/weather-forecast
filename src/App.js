@@ -9,6 +9,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 style={{'color': 'white'}}>and now heres john with the weather.</h1>
+        <input type='text'/>
+        <input type="text"/>
         <Frame/>
       </div>
     );

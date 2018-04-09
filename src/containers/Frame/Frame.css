@@ -1,10 +1,9 @@
 .Frame {
     display: flex;
     flex-direction: row;
-
-    height: 800px;
+    height: 400px;
     width: 80%;
     background-color: #d8635d;
     margin: 0 auto;
-    box-shadow: 3px 3px 10px #a14948;
+    box-shadow: 5px 5px 40px #424242;
 }

@@ -1,0 +1,32 @@
+.DayList {
+    flex-grow: 5;
+    height: 200px;
+    /* width: 50px; */
+    background-color: white;
+    margin-right: 20px;
+    align-self: center;
+    /* position: relative; */
+    border-radius: 1%;
+    box-shadow: 1px 1px 1px rgb(82, 66, 66);
+}
+
+.DayList:nth-child(1) {
+    margin-left: 20px;
+}
+
+.currentWeather {
+    border-radius: 50%;
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.temp {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* .Block:nth-child(5) {
+    margin-right: 10px;
+} */
