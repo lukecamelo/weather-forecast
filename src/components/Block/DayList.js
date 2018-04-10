@@ -7,7 +7,8 @@ class DayList extends Component {
         return (
             <div className='DayList'>
                 <span>{this.props.day}</span>
-                <div className='currentWeather'></div>
+                {/* <div className='currentWeather'></div> */}
+                <div>Sunny</div>
                 <span className='temp'>{this.props.temp}</span>
             </div>
         );
