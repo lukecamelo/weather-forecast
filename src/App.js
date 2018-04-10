@@ -8,46 +8,13 @@ const API_KEY = 'b7ed1afa86c47e8f23a654b41b195fc5';
 
 class App extends Component {
 
-  state = { dayOne: {
+  state = {
     temperature: undefined,
     city: 'City',
     country: 'Country',
     description: undefined,
     iconCode: undefined,
     error: undefined
-    },
-      dayTwo: {
-    temperature: undefined,
-    city: 'City',
-    country: 'Country',
-    description: undefined,
-    iconCode: undefined,
-    error: undefined
-    },
-      dayThree: {
-    temperature: undefined,
-    city: 'City',
-    country: 'Country',
-    description: undefined,
-    iconCode: undefined,
-    error: undefined
-    },
-      dayFour: {
-    temperature: undefined,
-    city: 'City',
-    country: 'Country',
-    description: undefined,
-    iconCode: undefined,
-    error: undefined
-    },
-      dayFive: {
-    temperature: undefined,
-    city: 'City',
-    country: 'Country',
-    description: undefined,
-    iconCode: undefined,
-    error: undefined
-    }
   }
 
   getWeather = async (e) => {
@@ -56,16 +23,16 @@ class App extends Component {
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
 
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${API_KEY}&units=metric`);
+    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
     // converts API data to json
     const data = await api_call.json();
     console.log(data);
     this.setState({
-      temperature: data.list[0].main.temp,
-      city: data.city.name,
-      country: data.city.country,
-      description: data.list[0].weather[0].description,
-      iconCode: data.list[0].weather[0].icon,
+      temperature: data.main.temp,
+      city: data.name,
+      country: data.sys.country,
+      description: data.weather[0].description,
+      iconCode: data.weather[0].icon,
       error: ''
     });
   }
