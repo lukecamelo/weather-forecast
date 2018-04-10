@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import './DayList.css'
 
 class DayList extends Component {
+  
     render() {
-
         return (
             <div className='DayList'>
                 <span>{this.props.day}</span>

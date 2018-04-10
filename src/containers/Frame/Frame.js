@@ -2,12 +2,6 @@ import React, {Component} from 'react';
 import DayList from '../../components/Block/DayList';
 import './Frame.css';
 
-const input = () => {
-    return (
-        <input type="text"/>
-    );
-}
-
 class Frame extends Component {
     render () {
         return (
