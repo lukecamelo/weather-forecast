@@ -14,7 +14,7 @@ class Frame extends Component {
             <div className="Frame">
 
                 <h1 style={{'color': 'white'}}>
-                    {this.props.city}, {this.props.country} | looks like: {this.props.description}
+                    {this.props.city}, {this.props.country} | looks like: {this.props.description} | Temperature: {this.props.temp}F°
                 </h1>
                 {/* TODO fix the 404 warning/error that displays before user enters a city. */}
                 <img src={"http://openweathermap.org/img/w/" + this.props.iconCode + ".png"} alt=""/>
