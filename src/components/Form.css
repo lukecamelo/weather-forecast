@@ -1,3 +1,7 @@
 .Form {
     margin-bottom: 40px;
 }
+
+.Form input {
+    margin-right: 10px;
+}

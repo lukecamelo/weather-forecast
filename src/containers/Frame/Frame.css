@@ -1,6 +1,7 @@
 .Frame {
-    display: flex;
-    flex-direction: row;
+    text-align: center;
+    margin-top: 100px;
+    margin: auto auto;
     height: 400px;
     width: 40%;
     background-color: #d8635d;

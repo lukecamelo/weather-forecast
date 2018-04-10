@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Frame from './containers/Frame/Frame';
-import Form from './components/Form';
+// import Form from './components/Form';
 // import Block from './components/Block/Block';
 import './App.css';
 
@@ -40,10 +40,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 style={{'color': 'white'}}>{this.state.city}, {this.state.country}, {this.state.description}</h1>
+        {/* <h1 style={{'color': 'white'}}>{this.state.city}, {this.state.country}, {this.state.description}</h1>
         <img src={"http://openweathermap.org/img/w/" + this.state.iconCode + ".png"} alt=""/>
-        <Form getWeather={this.getWeather} />  
-        <Frame />
+        <Form getWeather={this.getWeather} />   */}
+        <Frame 
+        city={this.state.city}
+        country={this.state.country}
+        description={this.state.description}
+        iconCode={this.state.iconCode}
+        getWeather={this.getWeather}/>
       </div>
     );
   }

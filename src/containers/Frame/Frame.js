@@ -1,26 +1,26 @@
 import React, {Component} from 'react';
-import DayList from '../../components/Block/DayList';
+// import DayList from '../../components/Block/DayList';
+import Form from '../../components/Form';
 import './Frame.css';
 
 class Frame extends Component {
+
+    // constructor(props){
+    //     super(props);
+    // }
+
     render () {
         return (
             <div className="Frame">
-                <DayList 
-                day={'monday'}
-                temp={'60F'}/>
-                <DayList 
-                day={'tuesday'}
-                temp={'60F'}/>
-                <DayList 
-                day={'wednesday'}
-                temp={'60F'}/>
-                <DayList 
-                day={'thursday'}
-                temp={'60F'}/>
-                <DayList 
-                day={'friday'}
-                temp={'60F'}/>
+
+                <h1 style={{'color': 'white'}}>
+                    {this.props.city}, {this.props.country} | looks like: {this.props.description}
+                </h1>
+                {/* TODO fix the 404 warning/error that displays before user enters a city. */}
+                <img src={"http://openweathermap.org/img/w/" + this.props.iconCode + ".png"} alt=""/>
+
+                <Form getWeather={this.props.getWeather} />
+
             </div>
         );
     }
