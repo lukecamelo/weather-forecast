@@ -1,10 +1,15 @@
 .Frame {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10vh;
     margin: auto auto;
-    height: 400px;
+    height: 40vh;
     width: 40%;
-    background-color: #d8635d;
+    background-color: #d85d5d;
     margin: 0 auto;
     box-shadow: 5px 5px 40px #424242;
 }
+
+.Frame * {
+    text-align: center;
+}
+
